@@ -1,9 +1,12 @@
 import { useState } from "react";
-import "./App.css";
+
 import Search from "./components/Search";
 import CurrentWeather from "./components/CurrentWeather";
-import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import Forecast from "./components/Forecast";
+
+import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
+
+import "./App.css";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -40,7 +43,7 @@ function App() {
         <div
           className="bg-cover bg-center"
           style={{
-            backgroundImage: `url(../public/bgImgs/${currentWeather.weather[0].icon}.png)`,
+            backgroundImage: `url(bgImgs/${currentWeather.weather[0].icon}.png)`,
           }}
         >
           <div className="mx-auto my-0 h-[95vh] max-w-[720px]">

@@ -37,7 +37,7 @@ const Forecast = ({ data }) => {
                 <div className="m-1 flex h-10 cursor-pointer items-center rounded-2xl bg-stone-300/90 py-1 px-5 text-sm">
                   <img
                     className="w-7"
-                    src={`../../public/icons/${item.weather[0].icon}.png`}
+                    src={`icons/${item.weather[0].icon}.png`}
                     alt="weather"
                   />
                   <label className="ml-2 flex-1 font-semibold text-slate-900">
